@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F6E950F2E69D77E006C89F4 /* Mood_Journal_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E950E2E69D77E006C89F4 /* Mood_Journal_AppApp.swift */; };
+		3F6E95112E69D77E006C89F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E95102E69D77E006C89F4 /* ContentView.swift */; };
+		3F6E95132E69D77F006C89F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E95122E69D77F006C89F4 /* Assets.xcassets */; };
+		3F6E95162E69D77F006C89F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E95152E69D77F006C89F4 /* Preview Assets.xcassets */; };
+		3F6E95202E69D77F006C89F4 /* Mood_Journal_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E951F2E69D77F006C89F4 /* Mood_Journal_AppTests.swift */; };
+		3F6E952A2E69D77F006C89F4 /* Mood_Journal_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E95292E69D77F006C89F4 /* Mood_Journal_AppUITests.swift */; };
+		3F6E952C2E69D77F006C89F4 /* Mood_Journal_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E952B2E69D77F006C89F4 /* Mood_Journal_AppUITestsLaunchTests.swift */; };
+		3F6E95392E69DF1C006C89F4 /* MoodSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E95382E69DF1C006C89F4 /* MoodSelectionView.swift */; };
+		3F6E953B2E69DFC9006C89F4 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E953A2E69DFC9006C89F4 /* JournalView.swift */; };
+		3F6E953D2E69DFEF006C89F4 /* MoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E953C2E69DFEF006C89F4 /* MoodDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6E951C2E69D77F006C89F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6E95032E69D77E006C89F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6E950A2E69D77E006C89F4;
+			remoteInfo = "Mood Journal App";
+		};
+		3F6E95262E69D77F006C89F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6E95032E69D77E006C89F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6E950A2E69D77E006C89F4;
+			remoteInfo = "Mood Journal App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F6E950B2E69D77E006C89F4 /* Mood Journal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Journal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6E950E2E69D77E006C89F4 /* Mood_Journal_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Journal_AppApp.swift; sourceTree = "<group>"; };
+		3F6E95102E69D77E006C89F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F6E95122E69D77F006C89F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F6E95152E69D77F006C89F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F6E951B2E69D77F006C89F4 /* Mood Journal AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood Journal AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6E951F2E69D77F006C89F4 /* Mood_Journal_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Journal_AppTests.swift; sourceTree = "<group>"; };
+		3F6E95252E69D77F006C89F4 /* Mood Journal AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood Journal AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6E95292E69D77F006C89F4 /* Mood_Journal_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Journal_AppUITests.swift; sourceTree = "<group>"; };
+		3F6E952B2E69D77F006C89F4 /* Mood_Journal_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_Journal_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F6E95382E69DF1C006C89F4 /* MoodSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionView.swift; sourceTree = "<group>"; };
+		3F6E953A2E69DFC9006C89F4 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		3F6E953C2E69DFEF006C89F4 /* MoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F6E95082E69D77E006C89F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95182E69D77F006C89F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95222E69D77F006C89F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F6E95022E69D77E006C89F4 = {
+			isa = PBXGroup;
+			children = (
+				3F6E950D2E69D77E006C89F4 /* Mood Journal App */,
+				3F6E951E2E69D77F006C89F4 /* Mood Journal AppTests */,
+				3F6E95282E69D77F006C89F4 /* Mood Journal AppUITests */,
+				3F6E950C2E69D77E006C89F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F6E950C2E69D77E006C89F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E950B2E69D77E006C89F4 /* Mood Journal App.app */,
+				3F6E951B2E69D77F006C89F4 /* Mood Journal AppTests.xctest */,
+				3F6E95252E69D77F006C89F4 /* Mood Journal AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F6E950D2E69D77E006C89F4 /* Mood Journal App */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E950E2E69D77E006C89F4 /* Mood_Journal_AppApp.swift */,
+				3F6E95102E69D77E006C89F4 /* ContentView.swift */,
+				3F6E953A2E69DFC9006C89F4 /* JournalView.swift */,
+				3F6E953C2E69DFEF006C89F4 /* MoodDetailView.swift */,
+				3F6E95382E69DF1C006C89F4 /* MoodSelectionView.swift */,
+				3F6E95122E69D77F006C89F4 /* Assets.xcassets */,
+				3F6E95142E69D77F006C89F4 /* Preview Content */,
+			);
+			path = "Mood Journal App";
+			sourceTree = "<group>";
+		};
+		3F6E95142E69D77F006C89F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E95152E69D77F006C89F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F6E951E2E69D77F006C89F4 /* Mood Journal AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E951F2E69D77F006C89F4 /* Mood_Journal_AppTests.swift */,
+			);
+			path = "Mood Journal AppTests";
+			sourceTree = "<group>";
+		};
+		3F6E95282E69D77F006C89F4 /* Mood Journal AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E95292E69D77F006C89F4 /* Mood_Journal_AppUITests.swift */,
+				3F6E952B2E69D77F006C89F4 /* Mood_Journal_AppUITestsLaunchTests.swift */,
+			);
+			path = "Mood Journal AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F6E950A2E69D77E006C89F4 /* Mood Journal App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6E952F2E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal App" */;
+			buildPhases = (
+				3F6E95072E69D77E006C89F4 /* Sources */,
+				3F6E95082E69D77E006C89F4 /* Frameworks */,
+				3F6E95092E69D77E006C89F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mood Journal App";
+			productName = "Mood Journal App";
+			productReference = 3F6E950B2E69D77E006C89F4 /* Mood Journal App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F6E951A2E69D77F006C89F4 /* Mood Journal AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6E95322E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal AppTests" */;
+			buildPhases = (
+				3F6E95172E69D77F006C89F4 /* Sources */,
+				3F6E95182E69D77F006C89F4 /* Frameworks */,
+				3F6E95192E69D77F006C89F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6E951D2E69D77F006C89F4 /* PBXTargetDependency */,
+			);
+			name = "Mood Journal AppTests";
+			productName = "Mood Journal AppTests";
+			productReference = 3F6E951B2E69D77F006C89F4 /* Mood Journal AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F6E95242E69D77F006C89F4 /* Mood Journal AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6E95352E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal AppUITests" */;
+			buildPhases = (
+				3F6E95212E69D77F006C89F4 /* Sources */,
+				3F6E95222E69D77F006C89F4 /* Frameworks */,
+				3F6E95232E69D77F006C89F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6E95272E69D77F006C89F4 /* PBXTargetDependency */,
+			);
+			name = "Mood Journal AppUITests";
+			productName = "Mood Journal AppUITests";
+			productReference = 3F6E95252E69D77F006C89F4 /* Mood Journal AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F6E95032E69D77E006C89F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3F6E950A2E69D77E006C89F4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					3F6E951A2E69D77F006C89F4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3F6E950A2E69D77E006C89F4;
+					};
+					3F6E95242E69D77F006C89F4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3F6E950A2E69D77E006C89F4;
+					};
+				};
+			};
+			buildConfigurationList = 3F6E95062E69D77E006C89F4 /* Build configuration list for PBXProject "Mood Journal App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F6E95022E69D77E006C89F4;
+			productRefGroup = 3F6E950C2E69D77E006C89F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F6E950A2E69D77E006C89F4 /* Mood Journal App */,
+				3F6E951A2E69D77F006C89F4 /* Mood Journal AppTests */,
+				3F6E95242E69D77F006C89F4 /* Mood Journal AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F6E95092E69D77E006C89F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6E95162E69D77F006C89F4 /* Preview Assets.xcassets in Resources */,
+				3F6E95132E69D77F006C89F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95192E69D77F006C89F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95232E69D77F006C89F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F6E95072E69D77E006C89F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6E953D2E69DFEF006C89F4 /* MoodDetailView.swift in Sources */,
+				3F6E95112E69D77E006C89F4 /* ContentView.swift in Sources */,
+				3F6E95392E69DF1C006C89F4 /* MoodSelectionView.swift in Sources */,
+				3F6E953B2E69DFC9006C89F4 /* JournalView.swift in Sources */,
+				3F6E950F2E69D77E006C89F4 /* Mood_Journal_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95172E69D77F006C89F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6E95202E69D77F006C89F4 /* Mood_Journal_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6E95212E69D77F006C89F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6E952A2E69D77F006C89F4 /* Mood_Journal_AppUITests.swift in Sources */,
+				3F6E952C2E69D77F006C89F4 /* Mood_Journal_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F6E951D2E69D77F006C89F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6E950A2E69D77E006C89F4 /* Mood Journal App */;
+			targetProxy = 3F6E951C2E69D77F006C89F4 /* PBXContainerItemProxy */;
+		};
+		3F6E95272E69D77F006C89F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6E950A2E69D77E006C89F4 /* Mood Journal App */;
+			targetProxy = 3F6E95262E69D77F006C89F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F6E952D2E69D77F006C89F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F6E952E2E69D77F006C89F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F6E95302E69D77F006C89F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood Journal App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F6E95312E69D77F006C89F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood Journal App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F6E95332E69D77F006C89F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Journal App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mood Journal App";
+			};
+			name = Debug;
+		};
+		3F6E95342E69D77F006C89F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Journal App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mood Journal App";
+			};
+			name = Release;
+		};
+		3F6E95362E69D77F006C89F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Journal App";
+			};
+			name = Debug;
+		};
+		3F6E95372E69D77F006C89F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HykerK.Mood-Journal-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Journal App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F6E95062E69D77E006C89F4 /* Build configuration list for PBXProject "Mood Journal App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6E952D2E69D77F006C89F4 /* Debug */,
+				3F6E952E2E69D77F006C89F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6E952F2E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6E95302E69D77F006C89F4 /* Debug */,
+				3F6E95312E69D77F006C89F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6E95322E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6E95332E69D77F006C89F4 /* Debug */,
+				3F6E95342E69D77F006C89F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6E95352E69D77F006C89F4 /* Build configuration list for PBXNativeTarget "Mood Journal AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6E95362E69D77F006C89F4 /* Debug */,
+				3F6E95372E69D77F006C89F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F6E95032E69D77E006C89F4 /* Project object */;
+}
