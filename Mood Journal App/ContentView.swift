@@ -34,7 +34,7 @@ struct Data: Identifiable {
     let date = Date()
 }
 
-class MoodData: ObservableObject{
+class MoodData: ObservableObject {
     @Published var dataEntries: [Data] = []
     
     var todaysMood: Data? {

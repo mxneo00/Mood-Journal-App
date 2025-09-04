@@ -13,12 +13,19 @@ struct MoodSelectionView: View{
     
     let moods = ["😀", "🙁", "😡", "😐", "😴"]
     
-    var body: some View{
+    var body: some View {
         VStack {
             Text("Pick todays mood")
             
-            
+            ForEach(moods, id: \.self){ mood in
+                Text(mood).onTapGesture {
+                    let newMood = Data(mood: mood)
+                    moodData.dataEntries.insert(newMood, at: 0)
+                }
+            }
+            Spacer()
         }
+        .padding()
     }
 }
 
