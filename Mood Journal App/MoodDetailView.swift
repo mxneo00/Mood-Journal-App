@@ -11,3 +11,7 @@ import SwiftUI
 struct MoodDetailView: View{
     
 }
+
+#Preview {
+    MoodDetailView()
+}

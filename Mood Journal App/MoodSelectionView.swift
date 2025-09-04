@@ -21,3 +21,8 @@ struct MoodSelectionView: View{
         }
     }
 }
+
+
+#Preview {
+    MoodSelectionView()
+}

@@ -11,3 +11,7 @@ import SwiftUI
 struct JournalView: View {
     
 }
+
+#Preview {
+    JournalView()
+}
