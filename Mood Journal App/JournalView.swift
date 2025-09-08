@@ -15,9 +15,9 @@ struct JournalView: View {
     
     var body: some View {
         List() {
-            ForEach(moodData.dataEntries) { entry in
+            ForEach($moodData.dataEntries) { $entry in
                 NavigationLink {
-                    MoodDetailView(entry: entry)
+                    MoodDetailView(entry: $entry)
                 } label: {
                     HStack {
                         Text(entry.mood).font(.system(size: 30))

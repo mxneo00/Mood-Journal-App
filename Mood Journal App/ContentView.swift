@@ -23,6 +23,7 @@ struct ContentView: View {
                 
                 NavigationLink("Journal", destination: JournalView())
                 
+                //Fix to account for new note feature
                 NavigationLink("Mood Details", destination: MoodDetailView(entry: moodData.todaysMood))
             }
             .navigationTitle("Mood Journal")
@@ -36,6 +37,7 @@ struct MoodEntry: Identifiable {
     let id = UUID()
     let mood: String
     let date = Date()
+    var note: String = ""
 }
 
 class MoodData: ObservableObject {

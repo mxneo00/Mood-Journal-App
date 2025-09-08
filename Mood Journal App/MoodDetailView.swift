@@ -9,24 +9,23 @@ import Foundation
 import SwiftUI
 
 struct MoodDetailView: View{
-    let entry: MoodEntry?
+    @Binding var entry: MoodEntry
     
     var body: some View {
-        if let entry = entry {
             VStack(spacing: 30) {
                 Text(entry.mood)
                     .font(.system(size: 60))
                 Text(entry.date.formatted(date: .abbreviated, time: .omitted))
                     .font(.system(size: 24))
                 // Add option to add notes
+                TextField("Note", text: $entry.note)
+                    .padding(.horizontal)
+                Spacer()
             }
             .navigationTitle("Mood Details")
-        } else {
-            Text("No mood selected today")
-        }
     }
 }
 
 #Preview {
-    MoodDetailView(entry: MoodEntry(mood: "😀"))
+    MoodDetailView(entry: .constant(MoodEntry(mood: "😀", note: "Feeling happy")))
 }
