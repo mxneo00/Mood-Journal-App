@@ -15,29 +15,33 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Text("Todays Mood:")
-                Text(moodData.todaysMood?.mood ?? "😐")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Text(moodData.todaysMood?.mood ?? "😐")
+                    .font(.headline)
                 
                 NavigationLink("Select mood", destination: MoodSelectionView())
                 
-                NavigationLink("Journal", destination: JournalView())
+                NavigationLink("Journal", destination: JournalView(moodData: MoodData()))
                 
-                NavigationLink("Mood Details", destination: MoodDetailView())
+                NavigationLink("Mood Details", destination: MoodDetailView(entry: moodData.todaysMood))
             }
+            .navigationTitle("Mood Journal")
         }
+        .environmentObject(moodData)
         .padding()
     }
 }
 
-struct Data: Identifiable {
+struct MoodEntry: Identifiable {
     let id = UUID()
     let mood: String
     let date = Date()
 }
 
 class MoodData: ObservableObject {
-    @Published var dataEntries: [Data] = []
+    @Published var dataEntries: [MoodEntry] = []
     
-    var todaysMood: Data? {
+    var todaysMood: MoodEntry? {
         dataEntries.first{Calendar.current.isDateInToday($0.date)}
     }
     

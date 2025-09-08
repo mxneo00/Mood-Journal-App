@@ -14,22 +14,27 @@ struct MoodSelectionView: View{
     let moods = ["😀", "🙁", "😡", "😐", "😴"]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text("Pick todays mood")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
             ForEach(moods, id: \.self){ mood in
-                Text(mood).onTapGesture {
-                    let newMood = Data(mood: mood)
+                Text(mood)
+                    .font(.system(size: 24))
+                    .onTapGesture {
+                    let newMood = MoodEntry(mood: mood)
                     moodData.dataEntries.insert(newMood, at: 0)
                 }
             }
             Spacer()
         }
         .padding()
+        .navigationTitle("Select Mood")
     }
 }
 
 
 #Preview {
     MoodSelectionView()
+        .environmentObject(MoodData())
 }
