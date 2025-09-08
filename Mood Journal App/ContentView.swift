@@ -24,6 +24,7 @@ struct ContentView: View {
                 NavigationLink("Journal", destination: JournalView())
                 
                 //Fix to account for new note feature
+                // Error message: Cannot convert value of type 'MoodEntry?' to expected argument type 'Binding<MoodEntry>
                 NavigationLink("Mood Details", destination: MoodDetailView(entry: moodData.todaysMood))
             }
             .navigationTitle("Mood Journal")
