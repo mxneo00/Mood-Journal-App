@@ -14,8 +14,8 @@ struct MoodSelectionView: View{
     let moods = ["😀", "🙁", "😡", "😐", "😴"]
     
     var body: some View {
-        VStack(spacing: 10) {
-            Text("Pick todays mood")
+        VStack(spacing: 15) {
+            Text("Pick today's mood")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             ForEach(moods, id: \.self){ mood in
                 Button(action: {
@@ -23,13 +23,13 @@ struct MoodSelectionView: View{
                     moodData.dataEntries.insert(newMood, at: 0)
                 }) {
                     Text(mood)
-                        .font(.system(size: 24))
+                        .font(.system(size: 40))
                         .padding()
                 }
             }
             Spacer()
         }
-        .padding()
+        .padding([.top], 100)
         .navigationTitle("Select Mood")
     }
 }
