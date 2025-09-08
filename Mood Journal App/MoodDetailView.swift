@@ -13,8 +13,8 @@ struct MoodDetailView: View{
     
     var body: some View {
         if let entry = entry {
-            VStack(spacing: 10) {
-                Text(entry.mood).font(.title)
+            VStack(spacing: 30) {
+                Text(entry.mood).font(.system(size: 60))
                 Text(entry.date.formatted(date: .abbreviated, time: .omitted))
                 // Add option to add notes
             }

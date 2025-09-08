@@ -17,7 +17,7 @@ struct ContentView: View {
                 Text("Todays Mood:")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Text(moodData.todaysMood?.mood ?? "😐")
-                    .font(.headline)
+                    .font(.system(size: 30))
                 
                 NavigationLink("Select mood", destination: MoodSelectionView())
                 

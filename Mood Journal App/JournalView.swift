@@ -5,14 +5,13 @@
 //  Created by Katellyn Hyker on 9/4/25.
 //
 // Add support to log multiple days of entries
-// Add support to delete or edit entries
+// Add support to delete entries
 
 
 //import Foundation
 import SwiftUI
 
 struct JournalView: View {
-    //@ObservedObject var moodData: MoodData
     @EnvironmentObject var moodData: MoodData
     
     var body: some View {
