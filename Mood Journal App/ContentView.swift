@@ -21,7 +21,7 @@ struct ContentView: View {
                 
                 NavigationLink("Select mood", destination: MoodSelectionView())
                 
-                NavigationLink("Journal", destination: JournalView(moodData: MoodData()))
+                NavigationLink("Journal", destination: JournalView())
                 
                 NavigationLink("Mood Details", destination: MoodDetailView(entry: moodData.todaysMood))
             }

@@ -4,12 +4,16 @@
 //
 //  Created by Katellyn Hyker on 9/4/25.
 //
+// Add support to log multiple days of entries
+// Add support to delete or edit entries
 
-import Foundation
+
+//import Foundation
 import SwiftUI
 
 struct JournalView: View {
-    @ObservedObject var moodData: MoodData
+    //@ObservedObject var moodData: MoodData
+    @EnvironmentObject var moodData: MoodData
     
     var body: some View {
         List(moodData.dataEntries) { entry in
@@ -17,7 +21,7 @@ struct JournalView: View {
                 MoodDetailView(entry: entry)
             } label: {
                 HStack {
-                    Text(entry.mood).font(.title)
+                    Text(entry.mood).font(.system(size: 30))
                     Text(entry.date.formatted(date: .abbreviated, time: .omitted))
                 }
             }
@@ -27,5 +31,6 @@ struct JournalView: View {
 }
 
 #Preview {
-    JournalView(moodData: MoodData())
+    JournalView()
+        .environmentObject(MoodData())
 }

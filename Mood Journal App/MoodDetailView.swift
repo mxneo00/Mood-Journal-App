@@ -16,6 +16,7 @@ struct MoodDetailView: View{
             VStack(spacing: 10) {
                 Text(entry.mood).font(.title)
                 Text(entry.date.formatted(date: .abbreviated, time: .omitted))
+                // Add option to add notes
             }
             .navigationTitle("Mood Details")
         } else {
