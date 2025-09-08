@@ -32,3 +32,4 @@ Display a single mood entry with date and emoji. Optionally allow note entry
 
 Add a TextField in MoodDetailView for journaling notes. Store entries persistently with @AppStorage or UserDefaults. Add colors that change with mood. 
 Support multiple days, avoiding duplicate entries for the same date.
+Delete/edit entries in the journal
