@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct MoodDetailView: View{
-    @Binding var entry: MoodEntry
-    
+    @Binding var entry: MoodEntry // Allows for edits to update stored data
+
+    // Dictionary to connect specific colors to each mood
     let moodColors: [String: Color] = [
         "😀": .yellow.opacity(0.5),
         "🙁": .blue.opacity(0.5),
@@ -21,13 +22,13 @@ struct MoodDetailView: View{
     var body: some View {
         
             VStack(spacing: 50) {
-                
+                // Display Emoji
                 Text(entry.mood)
                     .font(.system(size: 60))
-                
+                // Displays entry date
                 Text(entry.date.formatted(date: .abbreviated, time: .omitted))
                     .font(.system(size: 30))
-                
+                // Ability to write notes
                 TextField("Note", text: $entry.note)
                     .padding(.horizontal)
                     .font(.system(size: 24))
@@ -36,7 +37,7 @@ struct MoodDetailView: View{
             }
             .navigationTitle("Mood Details")
             .padding([.top], 20)
-            .background((moodColors[entry.mood] ?? .white))
+            .background((moodColors[entry.mood] ?? .white)) // Background changes based on mood selection or defaults to white background
     }
 }
 
