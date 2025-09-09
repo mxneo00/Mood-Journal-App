@@ -11,10 +11,14 @@ struct ContentView: View {
     @StateObject var moodData = MoodData()
     
     var body: some View {
+        
         NavigationView {
+            
             VStack {
+                
                 Text("Todays Mood:")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                
                 Text(moodData.todaysMood?.mood ?? "😐")
                     .font(.system(size: 30))
                 
