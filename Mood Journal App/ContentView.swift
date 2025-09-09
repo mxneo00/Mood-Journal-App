@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var moodData = MoodData()
+    @StateObject var moodData = MoodData() // Shared state for moods
     
     var body: some View {
         
@@ -18,14 +18,19 @@ struct ContentView: View {
                 
                 Text("Todays Mood:")
                     .font(.title)
-                
+
+                // Show todays mood emoji or a placeholder if a mood has not been selected
                 Text(moodData.todaysMood?.mood ?? "😐")
                     .font(.system(size: 30))
-                
+
+                // Navigate to SelectMoodView
                 NavigationLink("Select mood", destination: MoodSelectionView())
-                
+
+                // Navigate to JournalView
                 NavigationLink("Journal", destination: JournalView())
-                
+
+                // Navigate to MoodDetailsView
+                // Only interactable when a mood has been selected for the day
                 if let todaysIndex = moodData.dataEntries.firstIndex(where: {
                     Calendar.current.isDateInToday($0.date)
                 }) {
@@ -41,11 +46,12 @@ struct ContentView: View {
             }
             .navigationTitle("Mood Journal")
         }
-        .environmentObject(moodData)
+        .environmentObject(moodData) // Passes shared data to other views
         .padding()
     }
 }
 
+// Single mood entry variables
 struct MoodEntry: Identifiable {
     let id = UUID()
     let mood: String
@@ -53,6 +59,7 @@ struct MoodEntry: Identifiable {
     var note: String = ""
 }
 
+// Observable to store all entries
 class MoodData: ObservableObject {
     @Published var dataEntries: [MoodEntry] = []
     
