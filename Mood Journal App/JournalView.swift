@@ -4,7 +4,7 @@
 //
 //  Created by Katellyn Hyker on 9/4/25.
 //
-// Add support to log multiple days of entries
+// Displays a list of all entries while supporting navigation and deletion
 
 import SwiftUI
 
