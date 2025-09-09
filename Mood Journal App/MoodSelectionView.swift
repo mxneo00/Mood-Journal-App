@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct MoodSelectionView: View{
-    @EnvironmentObject var moodData: MoodData
-    
+    @EnvironmentObject var moodData: MoodData // Access shared data
+
+    // List of available moods
     let moods = ["😀", "🙁", "😡", "😐", "😴"]
     
     var body: some View {
@@ -18,9 +19,10 @@ struct MoodSelectionView: View{
             
             Text("Pick today's mood")
                 .font(.title)
-            
+            // Displays buttons for each available mood
             ForEach(moods, id: \.self){ mood in
                 Button(action: {
+                    // Stores selected mood as a new entry
                     let newMood = MoodEntry(mood: mood)
                     moodData.dataEntries.insert(newMood, at: 0)
                 }) {
