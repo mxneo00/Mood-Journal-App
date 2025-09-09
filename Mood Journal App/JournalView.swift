@@ -9,15 +9,17 @@
 import SwiftUI
 
 struct JournalView: View {
-    @EnvironmentObject var moodData: MoodData
+    @EnvironmentObject var moodData: MoodData // Access shared data
     
     var body: some View {
-        
+
+        // Create and display a list of all mood entries
         List() {
+            // Binding so edits are updated directly
             ForEach($moodData.dataEntries) { $entry in
-                
+
                 NavigationLink {
-                    
+                    // Send binding to the MoodDetailView
                     MoodDetailView(entry: $entry)
                     
                 } label: {
@@ -30,11 +32,12 @@ struct JournalView: View {
                     }
                 }
             }
-            .onDelete(perform: deleteEntry)
+            .onDelete(perform: deleteEntry) // Allow for entries to be deleted
         }
         .navigationTitle("Journal")
     }
-    
+
+    // Remove deleted entries from stored data
     private func deleteEntry(at offsets: IndexSet){
         moodData.dataEntries.remove(atOffsets: offsets)
     }
