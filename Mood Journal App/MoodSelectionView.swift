@@ -29,7 +29,7 @@ struct MoodSelectionView: View{
             }
             Spacer()
         }
-        .padding([.top], 100)
+        .padding([.top], 50)
         .navigationTitle("Select Mood")
     }
 }
