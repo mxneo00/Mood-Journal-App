@@ -6,8 +6,6 @@
 //
 // Add support to log multiple days of entries
 
-
-//import Foundation
 import SwiftUI
 
 struct JournalView: View {

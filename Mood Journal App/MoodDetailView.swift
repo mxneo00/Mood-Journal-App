@@ -5,11 +5,18 @@
 //  Created by Katellyn Hyker on 9/4/25.
 //
 
-import Foundation
 import SwiftUI
 
 struct MoodDetailView: View{
     @Binding var entry: MoodEntry
+    
+    let moodColors: [String: Color] = [
+        "😀": .yellow.opacity(0.5),
+        "🙁": .blue.opacity(0.5),
+        "😡": .red.opacity(0.5),
+        "😐": .gray.opacity(0.5),
+        "😴": .purple.opacity(0.5)
+    ]
     
     var body: some View {
         
@@ -29,6 +36,7 @@ struct MoodDetailView: View{
             }
             .navigationTitle("Mood Details")
             .padding([.top], 20)
+            .background((moodColors[entry.mood] ?? .white))
     }
 }
 

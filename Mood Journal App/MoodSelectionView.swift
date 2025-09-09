@@ -5,7 +5,6 @@
 //  Created by Katellyn Hyker on 9/4/25.
 //
 
-import Foundation
 import SwiftUI
 
 struct MoodSelectionView: View{
@@ -18,7 +17,7 @@ struct MoodSelectionView: View{
         VStack(spacing: 15) {
             
             Text("Pick today's mood")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.title)
             
             ForEach(moods, id: \.self){ mood in
                 Button(action: {
