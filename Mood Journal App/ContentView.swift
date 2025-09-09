@@ -23,9 +23,18 @@ struct ContentView: View {
                 
                 NavigationLink("Journal", destination: JournalView())
                 
-                //Fix to account for new note feature
-                // Error message: Cannot convert value of type 'MoodEntry?' to expected argument type 'Binding<MoodEntry>
-                NavigationLink("Mood Details", destination: MoodDetailView(entry: moodData.todaysMood))
+                if let todaysIndex = moodData.dataEntries.firstIndex(where: {
+                    Calendar.current.isDateInToday($0.date)
+                }) {
+                    NavigationLink("Mood Details") {
+                        MoodDetailView(entry: $moodData.dataEntries[todaysIndex])
+                    }
+                } else {
+                    NavigationLink("Mood Details") {
+                        Text("No entry today")
+                    }
+                    .disabled(true)
+                }
             }
             .navigationTitle("Mood Journal")
         }
