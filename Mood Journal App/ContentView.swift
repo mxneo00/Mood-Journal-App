@@ -4,6 +4,7 @@
 //
 //  Created by Katellyn Hyker on 9/4/25.
 //
+// Main Page: Display's today's mood and navigation to alternative pages
 
 import SwiftUI
 
