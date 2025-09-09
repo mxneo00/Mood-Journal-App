@@ -4,6 +4,9 @@
 //
 //  Created by Katellyn Hyker on 9/4/25.
 //
+// Displays all details of a single entry
+// Includes support for adding/editing notes
+// Background color changes based on the mood
 
 import SwiftUI
 
