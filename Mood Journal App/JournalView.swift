@@ -17,11 +17,17 @@ struct JournalView: View {
         
         List() {
             ForEach($moodData.dataEntries) { $entry in
+                
                 NavigationLink {
+                    
                     MoodDetailView(entry: $entry)
+                    
                 } label: {
+                    
                     HStack {
+                        
                         Text(entry.mood).font(.system(size: 30))
+                        
                         Text(entry.date.formatted(date: .abbreviated, time: .omitted))
                     }
                 }

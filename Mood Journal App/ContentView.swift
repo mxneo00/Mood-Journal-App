@@ -17,7 +17,7 @@ struct ContentView: View {
             VStack {
                 
                 Text("Todays Mood:")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .font(.title)
                 
                 Text(moodData.todaysMood?.mood ?? "😐")
                     .font(.system(size: 30))
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                 } else {
                     NavigationLink("Mood Details") {
-                        Text("No entry today")
+                        Text("No entry")
                     }
                     .disabled(true)
                 }

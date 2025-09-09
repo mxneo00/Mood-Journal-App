@@ -14,7 +14,9 @@ struct MoodSelectionView: View{
     let moods = ["😀", "🙁", "😡", "😐", "😴"]
     
     var body: some View {
+        
         VStack(spacing: 15) {
+            
             Text("Pick today's mood")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
