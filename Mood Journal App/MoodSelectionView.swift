@@ -4,6 +4,8 @@
 //
 //  Created by Katellyn Hyker on 9/4/25.
 //
+// Mood selection screen
+// Allows a user to select a mood with the tap of a button
 
 import SwiftUI
 
