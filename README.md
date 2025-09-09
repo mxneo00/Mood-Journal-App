@@ -28,8 +28,12 @@ Display a list of moods with date, use NavigationLink to MoodDetailView
 ### 5. Mood detail screen
 Display a single mood entry with date and emoji. Optionally allow note entry
 
-## Stretch Goals
+## Completed stretch goals
+Add a TextField in MoodDetailView for journaling notes. Add colors that change with mood. 
+Delete entries in the journal
 
-Add a TextField in MoodDetailView for journaling notes. Store entries persistently with @AppStorage or UserDefaults. Add colors that change with mood. 
+## Uncompleted Stretch Goals
+
+Store entries persistently with @AppStorage or UserDefaults. 
 Support multiple days, avoiding duplicate entries for the same date.
-Delete/edit entries in the journal
+Support editing previous entries
