@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var moodData = MoodData()
     
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -56,7 +55,6 @@ class MoodData: ObservableObject {
     var todaysMood: MoodEntry? {
         dataEntries.first{Calendar.current.isDateInToday($0.date)}
     }
-    
     
 }
 

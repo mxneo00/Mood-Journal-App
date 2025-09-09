@@ -14,6 +14,7 @@ struct JournalView: View {
     @EnvironmentObject var moodData: MoodData
     
     var body: some View {
+        
         List() {
             ForEach($moodData.dataEntries) { $entry in
                 NavigationLink {
@@ -29,6 +30,7 @@ struct JournalView: View {
         }
         .navigationTitle("Journal")
     }
+    
     private func deleteEntry(at offsets: IndexSet){
         moodData.dataEntries.remove(atOffsets: offsets)
     }
